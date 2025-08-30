@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+@font-face {
+    font-family: 'Atop';
+    src: url('fonts/Atop-R99O3.ttf');
+}
+
+body {
+    margin: 0px;
+    background-color:rgb(216, 230, 252);
+}
+
+h1 {
+    font-family: 'Atop';
+    margin: 0px;
+}
+
+#header {
+    background-size: cover;
+    text-align: center;
+}
+
+#navbar, #navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+}
+
+#navbar li {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    text-align: center;
+
+    height: 50px;
+    line-height: 50px;
+
+    position: relative;
+    z-index: 999;
+}
+
+#navbar {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    left: 0px;
+    right: 0px;
+}
+
+#navbar a {
+    color: #818181;
+    border-bottom: 2px solid rgb(179, 179, 179);
+    text-decoration: none;
+
+    display: block;
+}
+
+#navbar a:hover {
+    color: rgb(112, 120, 193);
+}
+
+#navbar li:hover, #active-menu {
+    border-bottom: 2px solid rgb(112, 120, 193);
+    color: rgb(112, 120, 193);
+    background-color: rgb(211, 211, 211);
+}
+
+#navbar ul {
+    position: absolute;
+    display: none;
+}
+
+#navbar ul ul {
+    left: 150px;
+    top: 0px;
+}
+
+#navbar li:hover > ul {
+    display: block;
+    z-index: 999;
+}
