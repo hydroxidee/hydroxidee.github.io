@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Terminal Window Styling */
+.terminal-window {
+    background: #D0CFCE;
+    border: 1px solid #7B8D69;
+    border-radius: 8px;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+}
+
+.terminal-header {
+    background: #617E98;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #7B8D69;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 1rem;
+}
+
+.terminal-buttons span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #23415a96;
+}
+
+.terminal-title {
+    color: #112434;
+    font-size: 0.875rem;
+}
+
+/* Animated typing effect */
+.animate-typing {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Terminal content styling */
+.terminal-content1 {
+    line-height: 1.6;
+}
+
+.terminal-content {
+    line-height: 1.6;
+}
+
+/* Skill cards */
+.skill-card {
+    padding: 1rem;
+    background: #b2b2b2;
+    border: 1px solid #7B8D69;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* .skill-card:hover {
+    border-color: #2E442D;
+    transform: translateY(-2px);
+} */
+
+/* Project cards */
+.project-card {
+    padding: 1.5rem;
+    background: #b2b2b2;
+    border: 1px solid #7B8D69;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: #2E442D;
+    background: #6b7a5b67;
+}
+
+/* Benchmark cards */
+.benchmark-card {
+    padding: 1.5rem;
+    background: #b2b2b2;
+    border: 1px solid #7B8D69;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* .benchmark-card:hover {
+    border-color: #2E442D;
+} */
+
+/* Social links */
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #7B8D69;
+    border-radius: 6px;
+    color: #3D251C;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    border-color: #2E442D;
+    transform: translateY(-2px);
+    background: #6b7a5b67;
+}
+
+/* Highlight box */
+.highlight-box {
+    padding: 1rem;
+    background: #00ff0010;
+    border-left: 3px solid #2E442D;
+    margin: 1rem 0;
+}
+
+/* Cursor animation */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.terminal-content1::after {
+    content: '█';
+    display: inline-block;
+    color: #2E442D;
+    animation: blink 1s infinite;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .terminal-window {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
+    
+    .skill-card,
+    .project-card,
+    .benchmark-card {
+        padding: 1rem;
+    }
+}
+
+/* Performance optimizations */
+* {
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Print styles */
+@media print {
+    .terminal-window {
+        border: 1px solid #ccc;
+        box-shadow: none;
+        break-inside: avoid;
+    }
+    
+    .terminal-header {
+        background: #f5f5f5;
+        color: #333;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+:focus {
+    outline: 2px solid #2E442D;
+    outline-offset: 2px;
+}
+
+aside {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+main {
+    overflow-x: auto;
+}
+
+.highlight {
+    color: #2E442D;
+    font-weight: bold;
+}

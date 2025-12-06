@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel Oh - Software Engineer</title>
+    <script src="./tailwind.js"></script>
+    <script src="./lucide.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="bg-[#A2B1BE] text-[#3D251C] font-mono">
+
+    <!-- FLEX WRAPPER: left stays, right scrolls -->
+    <div class="flex min-h-screen pt-10">
+
+        <!-- LEFT: whoami / hero -->
+        <aside class="fixed top-0 left-0 w-1/3 h-screen overflow-hidden pt-10">
+            <div class="px-4">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="terminal-title">portfolio.sh</div>
+                    </div>
+
+                    <div class="terminal-content1 p-6">
+                        <div class="animate-typing">
+                            <span class="text-[#2E442D]">$</span> whoami<br>
+                            <div class="mt-2 text-4xl font-bold">Rachel Oh</div>
+                            <div class="mt-2 text-xl text-[#2E442D]">Software Engineer</div>
+
+                            <div class="mt-6">
+                                <span class="text-[#2E442D]">$</span> cat introduction.txt<br>
+                                <p class="mt-2 text-lg">
+                                    Early Career Software Engineer motivated by continuous learning and meaningful work.
+                                    I enjoy diving into new challenges, understanding the “why” behind decisions, and 
+                                    building software that makes a difference.
+                                </p>
+                            </div>
+
+                            <div class="mt-6">
+                                <span class="text-[#2E442D]">$</span> echo $ME!<br>
+                                <img src="assets/headshot.jpg" alt="Rachel_Intro">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- RIGHT: scrollable content -->
+        <main class="ml-[33.33%] w-2/3 overflow-y-auto h-screen">
+
+            <!-- Projects Section -->
+            <section class="py-10">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="terminal-title">projects/</div>
+                            </div>
+                            <div class="terminal-content p-6">
+                                <div class="space-y-6">
+                                    <a href="https://play.unity.com/en/games/48e6cba8-285f-4a91-a536-74321fffe72f/midnight-mayhem"
+                                       target="_blank" rel="noopener noreferrer" class="project-card block">
+                                        <h3 class="text-xl font-bold text-[#2E442D]">
+                                            <span class="text-[#2E442D]">└──</span> Midnight Mayhem <br><br>
+                                        </h3>
+                                        <img src="assets/midnightmayhem.png" alt="Midnight Mayhem Logo">
+                                        <p class="mt-2 text-[#3D251C]">
+                                            <br>A racing game with <span class="highlight"> procedural track generation </span>and
+                                            high-intensity nighttime gameplay. Includes car customization, drifing, obstacles, power-ups, varying terrain, and bird. 
+                                            <br><br> 
+                                        </p><p style="text-indent: 2rem;">► Built with <span class="highlight">Unity, C#</span></p>
+                                    </a>
+
+                                    <a href="https://www.shadertoy.com/view/3c3yRl"
+                                       target="_blank" rel="noopener noreferrer" class="project-card block">
+                                        <h3 class="text-xl font-bold text-[#2E442D]">
+                                            <span class="text-[#2E442D]">└──</span> GLSL Minecraft <br><br>
+                                        </h3>
+                                        <img src="assets/minecraft.png" alt="GLSL Minecraft">
+                                        <p class="mt-2 text-[#3D251C]">
+                                            <br><span class="highlight">Voxel Minecraft</span> procedural generation with 3 different biomes (desert, tundra, 
+                                            grasslands), trees, caves, and day / night cycle.
+                                            <br><br> 
+                                        </p><p style="text-indent: 2rem;">► Built with <span class="highlight">GLSL shaders</span> on Shadertoy.</p>
+                                    </a>
+
+                                    <a href="https://github.com/username/project3"
+                                       target="_blank" rel="noopener noreferrer" class="project-card block">
+                                        <h3 class="text-xl font-bold text-[#2E442D]">
+                                            <span class="text-[#2E442D]">└──</span> Dragon Blasters <br><br>
+                                        </h3>
+                                        <img src="assets/dragonblasters.png" alt="Dragon Blasters Logo">
+                                        <p class="mt-2 text-[#3D251C]">
+                                            <br>An immersive, theme-park-style shooter where players use <span class="highlight">Arduino-based handheld blasters</span>
+                                            to hit dynamic targets and compete for high scores.
+                                            <br><br> 
+                                        </p> <p style="text-indent: 2rem;">► Built with <span class="highlight">Unity, C#, Arduino</span> </p>
+                                    </a>
+
+                                    <a href="https://college-genius-v2.netlify.app/"
+                                       target="_blank" rel="noopener noreferrer" class="project-card block">
+                                        <h3 class="text-xl font-bold text-[#2E442D]">
+                                            <span class="text-[#2E442D]">└──</span> College Genius
+                                        </h3>
+                                        <p class="mt-2 text-[#3D251C]">
+                                            College Genius connects students with qualified college counselors and tutors, offering personalized guidance, searchable profiles, and seamless booking to help every student succeed.
+                                            (Login may not work due to database hosting limitations.)
+                                            <br><br> Integrated <span class="highlight">Stripe API</span> payment processing for secure transactions. and <span class="highlight">Google OAuth</span> for easy user authentication. <br><br>
+                                        </p> <p style="text-indent: 2rem;">
+                                            ► Built with <span class="highlight">Vue, Flask, PostgreSQL, REST</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="py-20">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="terminal-title">experience.log</div>
+                            </div>
+                            <div class="terminal-content p-6">
+                                <div class="space-y-6">
+                                    <!-- Roblox -->
+                                    <div class="benchmark-card">
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[#2E442D]">►</span>
+                                            <h3 class="text-lg font-bold text-[#2E442D]">
+                                                Roblox | Software Engineering Intern
+                                            </h3>
+                                        </div>
+                                        <p class="mt-2 pl-6 text-[#3D251C]">
+                                            • Implemented H264 and VP9 hardware-accelerated video decoding on macOS and iOS. 
+                                            <br><br>• Optimized Roblox’s video pipeline for a 10× performance boost, and deployed new telemetry systems that improved visibility into playback issues. 
+                                            <br><br>• Enhanced the video experience for over 20M users.
+                                        </p>
+                                    </div>
+
+                                    <!-- Siemens -->
+                                    <div class="benchmark-card">
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[#2E442D]">►</span>
+                                            <h3 class="text-lg font-bold text-[#2E442D]">
+                                                Siemens DISW | Software Engineering Intern
+                                            </h3>
+                                        </div>
+                                        <p class="mt-2 pl-6 text-[#3D251C]">
+                                            • Built the first bounding-box validation framework for NX TeamCenter, adding 60+ automated tests that improved coverage and caught regressions early. 
+                                            <br><br>• Resolved build optimization issues by tracing assembly-level bugs. 
+                                            <br><br>• Optimized NX’s Simplify feature.
+                                        </p>
+                                    </div>
+
+                                    <!-- Wawa -->
+                                    <div class="benchmark-card">
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[#2E442D]">►</span>
+                                            <h3 class="text-lg font-bold text-[#2E442D]">
+                                                Wawa Inc. | Project Management Intern
+                                            </h3>
+                                        </div>
+                                        <p class="mt-2 pl-6 text-[#3D251C]">
+                                            • Streamlined project coordination across the IT department by enabling six teams 
+                                              to adopt Jira and by initiating a Jira–ServiceNow integration through a 
+                                              comprehensive business requirements design document.
+                                        </p>
+                                    </div>
+
+                                    <!-- USC TAC -->
+                                    <div class="benchmark-card">
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[#2E442D]">►</span>
+                                            <h3 class="text-lg font-bold text-[#2E442D]">
+                                                USC TAC | Lead Teaching Assistant
+                                            </h3>
+                                        </div>
+                                        <p class="mt-2 pl-6 text-[#3D251C]">
+                                            • Manage scheduling and communication for 24 Learning Assistants and 6 professors, 
+                                              ensuring consistent support and smooth course operations for 200+ students. 
+                                            <br><br>• Evaluate Python assignments for non-CS students with personalized feedback. 
+                                            <br><br>• Coordinate and host midterm and final review sessions to strengthen student 
+                                              understanding and performance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Skills Section -->
+            <section class="relative">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="terminal-title">skills.json</div>
+                            </div>
+                            <div class="terminal-content p-6">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> C++</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> Python</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> Java</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> HTML / CSS</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> JavaScript</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> SQL</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> Full Stack Development</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> Engine Development</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> Networking</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> Operating Systems</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> 3D Graphics & Rendering</div>
+                                    <div class="skill-card"><span class="text-[#2E442D]">▹</span> Game Development</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer / Links -->
+            <footer class="py-12">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="terminal-title">connect.sh</div>
+                            </div>
+                            <div class="terminal-content p-6">
+                                <div class="flex flex-wrap justify-center gap-4">
+                                    <a href="https://github.com/hydroxideee" target="_blank" rel="noopener noreferrer"
+                                       class="social-link">
+                                        <i data-lucide="Github" class="w-5 h-5"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/rachel-ohh/" target="_blank" rel="noopener noreferrer"
+                                       class="social-link">
+                                        <i data-lucide="Linkedin" class="w-5 h-5"></i>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                    <a href="https://docs.google.com/document/d/1St0Sdx1RdeHQs160aSQvD13UxCk0dAMCWbWuXfeQo-A/edit?usp=sharing"
+                                       target="_blank" rel="noopener noreferrer" class="social-link">
+                                        <span>Resume</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center text-sm opacity-60 hover:opacity-100 transition-opacity">
+                    <a href="https://portloom.com" target="_blank" rel="noopener noreferrer" 
+                       class="text-[#d2d2d2] hover:text-[#3D251C] transition-colors">
+                        Base Template from <span class="text-[#3D251C]">PortLoom</span>
+                    </a>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- Your scripts (terminal animations, lucide, etc.) -->
+    <script>
+        // Initialize Lucide icons after the DOM is loaded
+        window.addEventListener('load', function() {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
+    </script>
+
+</body>
+</html>
